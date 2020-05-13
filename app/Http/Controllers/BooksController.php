@@ -33,7 +33,7 @@ class BooksController extends Controller
      */
     public function validateRequest()
     {
-        $data = request()->validate(['title' => 'required', 'author' => 'required']);
+        $data = request()->validate(['title' => 'required', 'author_id' => 'required']);
         return $data;
     }
 }
